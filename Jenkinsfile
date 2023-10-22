@@ -1,10 +1,10 @@
 node{
     
-stage('for clone java code') {
+stage('maven java project') {
 git branch: 'main', url: 'https://github.com/pborawade/maven.git'
 }
 
-stage('execute maven target') {
+stage('my maven target') {
 sh 'mvn install'    
 }    
     
